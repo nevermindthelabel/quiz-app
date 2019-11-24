@@ -1,8 +1,10 @@
-body,
-html,
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+}
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -21,8 +23,7 @@ h1 {
   color: #56a5eb;
   margin-bottom: 5rem;
 }
-
-h1 span {
+h1 > span {
   font-size: 2.4rem;
   font-weight: 500;
 }
@@ -37,4 +38,11 @@ h3 {
   font-size: 2.8rem;
   font-weight: 500;
 }
-/*# sourceMappingURL=style.css.map */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
