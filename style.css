@@ -68,6 +68,20 @@ h3 {
   background-color: #dc3545;
 }
 
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
