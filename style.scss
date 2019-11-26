@@ -87,6 +87,18 @@ h3 {
   text-align: center;
 }
 
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+}
+
+#progress-bar-full {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
 // utilities
 
 .container {
