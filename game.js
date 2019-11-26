@@ -77,6 +77,10 @@ choices.forEach(choice => {
 
     const classToApply = selectedAnswer === currentQuestion.answer ? 'correct' : 'incorrect';
 
+    if (classToApply === 'correct') {
+      incrementScore(correctBonus);
+    }
+
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
@@ -85,5 +89,10 @@ choices.forEach(choice => {
     }, 1500);
   });
 });
+
+incrementScore = num => {
+  score += num;
+  scoreText.innerText = score;
+}
 
 startGame();
