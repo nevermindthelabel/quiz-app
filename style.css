@@ -110,6 +110,9 @@ input {
   border: none;
   box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
+input::placeholder {
+  color: #aaa;
+}
 
 .container {
   width: 100vw;
