@@ -15,8 +15,8 @@ let questions = [];
 fetch('questions.json').then( res => {
   return res.json();
 }).then( loadedQuestions => {
-  console.log(loadedQuestions);
-})
+  questions = loadedQuestions;
+});
 
 const correctBonus = 10;
 const maxQuestions = 3;
