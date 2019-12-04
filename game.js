@@ -16,6 +16,8 @@ fetch('questions.json').then( res => {
   return res.json();
 }).then( loadedQuestions => {
   questions = loadedQuestions;
+
+  startGame();
 });
 
 const correctBonus = 10;
@@ -30,6 +32,7 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+    console.log(availableQuestions.length, questionCounter);
     localStorage.setItem('Most Recent Score', score);
     // go to the end page
     return window.location.assign('/end.html');
@@ -80,5 +83,3 @@ incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 }
-
-startGame();
