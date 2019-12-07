@@ -134,6 +134,14 @@ input {
   }
 }
 
+#loader {
+  border: 1.6rem solid #ffffff;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+}
+
 // utilities
 
 .container {
