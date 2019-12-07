@@ -46,7 +46,6 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-    console.log(availableQuestions.length, questionCounter);
     localStorage.setItem('Most Recent Score', score);
     // go to the end page
     return window.location.assign('/end.html');
@@ -59,7 +58,7 @@ getNewQuestion = () => {
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
-  question.innerText = currentQuestion.question;
+  question.innerHTML = currentQuestion.question;
 
   choices.forEach( choice => {
     const correctGuess = choice.dataset['number'];
